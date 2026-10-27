@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PULKIT × BARCODE</title><style>
+#tadka-viewer{width:min(1100px,94vw);height:min(760px,88vh);max-width:none;max-height:none;padding:0;border:1px solid #ffffff33;background:#151318;color:white}
+#tadka-viewer::backdrop{background:rgba(0,0,0,.84)}
+#tadka-viewer .viewer-header{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font:600 14px Arial,sans-serif}
+#tadka-viewer button{border:1px solid #ffffff66;background:transparent;color:white;padding:7px 12px;cursor:pointer;font:inherit}
+#tadka-viewer iframe{display:block;width:100%;height:calc(100% - 52px);border:0;background:#08080a}
+</style></head><body style="margin:0;background:#08080a"><div id="pb-refined" style="background:#08080a;color:#fff;overflow:hidden;position:relative;isolation:isolate;font-family:Arial,sans-serif">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
+#pb-refined{--accent:#e34f65;--body:#d2ced5;--heading:#fff;--link:#c8c5cb;font:13px/1.8 Poppins,Arial,sans-serif}
+#pb-refined *{box-sizing:border-box}
+#pb-refined a{color:inherit;text-decoration:none}
+#pb-refined .nav{position:sticky;top:0;z-index:15;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 6%;background:#08080af2;border-bottom:1px solid #ffffff20;backdrop-filter:blur(15px)}
+#pb-refined .logo{font:24px Anton,Impact,sans-serif;white-space:nowrap;color:white}
+#pb-refined .logo span{color:var(--accent)}
+#pb-refined .navlinks{display:flex;gap:18px;overflow:auto;scrollbar-width:none}
+#pb-refined .navlinks a{font-size:10px;color:var(--link);white-space:nowrap}
+#pb-refined .navlinks a:hover{color:var(--accent)}
+#pb-refined .hero{position:relative;min-height:660px;overflow:hidden;padding:96px 7% 85px}
+#pb-refined .wave{position:absolute;inset:0;pointer-events:none}
+#pb-refined .wave svg{width:100%;height:100%;display:block}
+#pb-refined .wave .glow{fill:none;stroke:#e34f65;stroke-width:34;opacity:.53;filter:blur(24px)}
+#pb-refined .wave .mid{fill:none;stroke:#e34f65;stroke-width:10;opacity:.5;filter:blur(7px)}
+#pb-refined .wave .edge{fill:none;stroke:#ff6682;stroke-width:1.8}
+#pb-refined .wave .travel{fill:none;stroke:#ffd5de;stroke-width:4;stroke-linecap:round;stroke-dasharray:90 2200;filter:drop-shadow(0 0 12px #ff476c);animation:pb-travel 9s linear infinite}
+#pb-refined .wave .wave-shift{animation:pb-float 9s ease-in-out infinite alternate;transform-origin:80% 50%}
+#pb-refined .hero-copy{position:relative;z-index:2;max-width:700px}
+#pb-refined .eyebrow{font-size:10px;font-weight:700;letter-spacing:2.4px;color:var(--accent)}
+#pb-refined h1,#pb-refined h2,#pb-refined h3{font-family:Anton,Impact,sans-serif;font-weight:400;line-height:1.1;margin:0;color:var(--heading)}
+#pb-refined h1{font-size:clamp(74px,11vw,145px);margin:30px 0}
+#pb-refined h1 em{display:block;font:italic .68em 'DM Serif Display',Georgia,serif;margin-top:7px}
+#pb-refined .intro{font-size:16px;line-height:1.95;max-width:570px;color:var(--body);margin:28px 0}
+#pb-refined .btn{display:inline-block;padding:16px 24px;background:var(--accent);border:1px solid var(--accent);color:white!important;font-size:10px;font-weight:700;letter-spacing:1px;transition:.25s;cursor:pointer}
+#pb-refined .btn:hover{background:white;color:#08080a!important;transform:translateY(-3px)}
+#pb-refined .down{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:white;color:#08080a!important;font-size:26px;z-index:3}
+#pb-refined .ticker{overflow:hidden;background:var(--accent);color:#08080a;padding:10px 0;font:20px Anton,Impact,sans-serif}
+#pb-refined .ticker-track{display:flex;width:max-content;animation:pb-marquee 27s linear infinite}
+#pb-refined .ticker-track span{white-space:nowrap}
+#pb-refined section{position:relative;padding:74px 7%;border-top:1px solid #ffffff1c;scroll-margin-top:85px;overflow:hidden}
+#pb-refined h2{font-size:clamp(45px,7vw,82px);margin:12px 0 20px}
+#pb-refined h3{font-size:clamp(23px,3vw,34px);margin:12px 0}
+#pb-refined .desc{max-width:740px;color:var(--body);font-size:13px;line-height:1.95;margin:0 0 26px}
+#pb-refined .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#pb-refined .card{background:#151318;border:1px solid #ffffff29;padding:24px;overflow:hidden;transition:transform .25s,border-color .25s}
+#pb-refined .card:hover{transform:translateY(-5px);border-color:var(--accent)}
+#pb-refined .card p{color:var(--body);line-height:1.9}
+#pb-refined .tag{font-size:9px;letter-spacing:1.6px;font-weight:700;color:#ed8297}
+#pb-refined .deck{display:inline-block;color:var(--link)!important;border-bottom:1px solid #8e8991;padding:7px 0;margin-top:8px;font-size:11px;font-weight:600;transition:.2s}
+#pb-refined .deck:hover{color:var(--accent)!important;border-color:var(--accent)}
+#pb-refined .poster{height:150px;margin:-24px -24px 20px;position:relative;overflow:hidden;background:#0c0b0e}
+#pb-refined .poster svg{width:100%;height:100%}
+#pb-refined .poster span{position:absolute;left:19px;bottom:14px;font:clamp(29px,4vw,50px) Anton,Impact,sans-serif;color:white}
+#pb-refined .films{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#pb-refined .film{padding:0}
+#pb-refined .film-art{aspect-ratio:9/16;position:relative;overflow:hidden;background:#160e14}
+#pb-refined .film-art video{cursor:pointer}
+#pb-refined .film-art svg{width:100%;height:100%}
+#pb-refined .film-art span{position:absolute;bottom:20px;left:12px;right:12px;color:white;font:clamp(23px,4vw,48px)/1.1 Anton,Impact,sans-serif;text-shadow:0 3px 15px #000}
+#pb-refined .film .info{padding:15px}
+#pb-refined .film h3{font-size:clamp(17px,2.4vw,28px)}
+#pb-refined .brands{overflow:hidden;mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent);margin-bottom:25px}
+#pb-refined .brandtrack{display:flex;width:max-content;animation:pb-marquee 29s linear infinite}
+#pb-refined .brands:hover .brandtrack{animation-play-state:paused}
+#pb-refined .brand{min-width:190px;height:94px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;color:var(--link)!important;font:20px Anton,Impact,sans-serif;white-space:nowrap;transition:.2s}
+#pb-refined .brand:hover{color:var(--brand)!important;transform:scale(1.08)}
+#pb-refined .brand small{font:8px Poppins,Arial,sans-serif;letter-spacing:1px;opacity:0;transition:.2s}
+#pb-refined .brand:hover small{opacity:1}
+#pb-refined .extras{display:none;margin-top:16px}
+#pb-refined .extras.open{display:grid}
+#pb-refined .ring-stage{width:min(100%,820px);height:355px;margin:18px auto 35px}
+#pb-refined .ring-stage svg{display:block;width:100%;height:100%;overflow:visible}
+#pb-refined .ring{fill:none;stroke:#a43b53;stroke-width:1.5}
+#pb-refined .ring-hot{fill:none;stroke:#f16a84;stroke-width:2.5;stroke-dasharray:125 1600;stroke-linecap:round;filter:drop-shadow(0 0 8px #e34f65);animation:pb-ring 12s linear infinite}
+#pb-refined .ring-title{fill:white;font:52px Anton,Impact,sans-serif}
+#pb-refined .ring-sub{fill:#c8c5cb;font:11px Poppins,Arial,sans-serif;letter-spacing:3px}
+#pb-refined .genres,#pb-refined .nextgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+#pb-refined .genre{min-height:180px;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 80% 0%,#e34f6537,transparent 65%),#151318}
+#pb-refined .nextgrid .card{border-top:2px solid var(--accent)}
+#pb-refined .end{font:clamp(42px,7vw,82px)/1.14 Anton,Impact,sans-serif;margin:45px 0 17px;color:white}
+#pb-refined .end em{font:italic .9em 'DM Serif Display',Georgia,serif}
+#pb-refined footer{padding:0 7% 12px;border-top:none}#pb-refined #pbr-next{padding-bottom:12px}
+@keyframes pb-travel{to{stroke-dashoffset:-2290}}
+@keyframes pb-ring{to{stroke-dashoffset:-1725}}
+@keyframes pb-float{from{transform:translateX(-5px)}to{transform:translateX(7px)}}
+@keyframes pb-marquee{to{transform:translateX(-50%)}}
+@media(max-width:680px){#pb-refined .nav{display:block}#pb-refined .navlinks{margin-top:12px}#pb-refined .hero{min-height:605px;padding-top:82px}#pb-refined .intro{font-size:13px;max-width:82%}#pb-refined .wave svg{transform:translateX(10%)}#pb-refined section{padding:52px 6%}#pb-refined .grid,#pb-refined .genres,#pb-refined .nextgrid{grid-template-columns:1fr}#pb-refined .films{gap:7px}#pb-refined .film .info{padding:9px 7px}#pb-refined .film h3{font-size:15px}#pb-refined .film p{font-size:9px}#pb-refined .ring-stage{height:235px}#pb-refined .ring-title{font-size:45px}}
+@media(prefers-reduced-motion:reduce){#pb-refined .wave-shift,#pb-refined .travel,#pb-refined .ticker-track,#pb-refined .brandtrack,#pb-refined .ring-hot{animation:none}}
+</style>
+<nav class="nav"><a class="logo" href="#pb-refined" aria-label="PULKIT × BARCODE, back to home">PULKIT <span>×</span> BARCODE</a><div class="navlinks"><a href="#pbr-pipeline">Pipeline</a><a href="#pbr-platforms">Platforms</a><a href="#pbr-films">Brand Films</a><a href="#pbr-brands">Brand IP</a><a href="#pbr-next">What's Next</a></div></nav>
+<header class="hero"><div class="wave" aria-hidden="true"><svg viewBox="0 0 1160 660" preserveAspectRatio="xMidYMid slice"><defs><path id="pbr-spine" d="M800 -90 C760 140 710 390 645 740"/><path id="pbr-curves" d="M930 -90 C1140 -45 1125 105 960 175 C820 235 770 285 825 335 C860 370 1030 390 1060 475 C1100 575 970 645 870 740"/></defs><g class="wave-shift"><path d="M800 -90 C760 140 710 390 645 740 L870 740 C970 645 1100 575 1060 475 C1030 390 860 370 825 335 C770 285 820 235 960 175 C1125 105 1140 -45 930 -90 Z" fill="#000"/><use href="#pbr-spine" class="glow"/><use href="#pbr-curves" class="glow"/><use href="#pbr-spine" class="mid"/><use href="#pbr-curves" class="mid"/><use href="#pbr-spine" class="edge"/><use href="#pbr-curves" class="edge"/><use href="#pbr-spine" class="travel"/><use href="#pbr-curves" class="travel"/></g></svg></div><div class="hero-copy"><div class="eyebrow">CREATIVE · STORYTELLING · ENTERTAINMENT</div><h1>BEYOND <em>the Brief.</em></h1><p class="intro">Ideas worth watching. Stories worth staying for. Building digital-first entertainment that lives beyond the brief.</p><a class="btn" href="#pbr-platforms">EXPLORE THE WORK ↓</a></div></header>
+<div class="ticker"><div class="ticker-track"><span>✳ IDEAS WORTH WATCHING ✳ STORIES WORTH STAYING FOR ✳ BEYOND THE BRIEF ✳ </span><span>✳ IDEAS WORTH WATCHING ✳ STORIES WORTH STAYING FOR ✳ BEYOND THE BRIEF ✳ </span></div></div>
+<section id="pbr-pipeline"><div class="eyebrow">THE PIPELINE</div><h2>IN THE MAKING.</h2><p class="desc">An evolving slate of micro dramas, platform pitches, brand IP and original entertainment from first spark to developed creative opportunity.</p><a class="btn" href="https://docs.google.com/spreadsheets/d/1vwziYTrYFJkbsEx_s7nWpgTeuRfxdoMpWMT6enfelx8/edit?usp=sharing" target="_blank" rel="noopener">PLATFORM REACH OUT TRACKER ↗</a></section>
+<section id="pbr-platforms"><div class="eyebrow">PLATFORM PARTNERSHIPS</div><h2>BUILT FOR THE SCREEN.</h2><div class="grid">
+<div class="card"><div class="poster" style="background:url('images/tadka.jpg') center / cover no-repeat #08080a"></div><div class="tag">JIOHOTSTAR</div><h3>STORIES FOR EVERY SCREEN.</h3><p>Status: Waiting for the SPOC to respond.</p><a class="deck" id="tadka-presentation" href="https://docs.google.com/presentation/d/1h9HfqQQi9TPqtipnJErmwkhFXK0bkccnOc-Bqq3GENM/edit?usp=sharing" target="_blank" rel="noopener">VIEW PRESENTATION ↗</a></div>
+<div class="card"><div class="poster" style="background:url('images/dangal.jpg') center / cover no-repeat #08080a"></div><div class="tag">FIVE PROPOSED SERIES</div><h3>DRAMA. REIMAGINED.</h3><p>Status: The sales team is in conversation.</p><a class="deck" href="https://docs.google.com/presentation/d/1g9dvKj-uuYJkHIqPYTG3Sn8SFR2a_hj51Tlfu78Sw4M/edit?usp=sharing" target="_blank" rel="noopener">VIEW PRESENTATION ↗</a></div>
+<div class="card"><div class="poster" style="background:url('images/chai-shots.jpg') center / cover no-repeat #f7f7f7"></div><div class="tag">FIVE PROPOSED SERIES</div><h3>SHORT. SHARP. ADDICTIVE.</h3><p>Status: They liked the ideas; waiting for an update.</p><a class="deck" href="https://docs.google.com/presentation/d/1_eeKIuSygVm0xWbp6yOyk5BEh1w8qPji4QOZrR6mjFg/edit?usp=sharing" target="_blank" rel="noopener">VIEW PRESENTATION ↗</a></div></div></section>
+<section id="pbr-films"><div class="eyebrow">BRAND FILMS</div><h2>STORIES THAT STAY.</h2><div class="films">
+<div class="card film"><div class="film-art"><video controls playsinline preload="metadata" aria-label="BPCL Raksha Bandhan film" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0"><source src="videos/raksha-bandhan.mp4" type="video/mp4"></video></div><div class="info"><div class="tag">BPCL / FESTIVE FILM</div><h3>RAKSHA BANDHAN</h3><p>A celebration of meaningful connections.</p></div></div>
+<div class="card film"><div class="film-art"><video controls playsinline preload="metadata" aria-label="BPCL Ganesh Chaturthi film" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0"><source src="videos/ganesh-chaturthi.mp4" type="video/mp4"></video></div><div class="info"><div class="tag">BPCL / FESTIVE FILM</div><h3>GANESH CHATURTHI</h3><p>A heartfelt festive celebration.</p></div></div>
+<div class="card film"><div class="film-art"><video controls playsinline preload="metadata" aria-label="BPCL Navratri film" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0"><source src="videos/navratri.mp4" type="video/mp4"></video></div><div class="info"><div class="tag">BPCL / FESTIVE FILM</div><h3>NAVRATRI</h3><p>A story of togetherness.</p></div></div></div></section>
+<section id="pbr-brands"><div class="eyebrow">BRAND IP</div><h2>BRANDS MEET STORIES.</h2><div class="brands"><div class="brandtrack">
+<a class="brand" style="--brand:#d5a978" href="https://docs.google.com/presentation/d/11eRqpfL4-VxV1aL2MTwc-1K_VoCkOM58Q39WbSgb26w/edit?usp=sharing" target="_blank" rel="noopener">MIA BY TANISHQ</a><a class="brand" style="--brand:#23c2a0" href="https://docs.google.com/presentation/d/1JzXYdG0qRMZHUu0iV0a63dwrr0KxFmX2PE7eL6tVCjM/edit?usp=sharing" target="_blank" rel="noopener">CAVINKARE</a><a class="brand" style="--brand:#f8a44d" href="https://docs.google.com/document/d/1eSd7Kc5okWKFZFNipGnsLsMHI74UUAkjVlxPEjRVQtk/edit?usp=sharing" target="_blank" rel="noopener">STYLE UNION</a><a class="brand" style="--brand:#45b7ed" href="https://docs.google.com/presentation/d/1X4BYSteA6s3o2UYV8gBK9SA_W3JQF2G6kiM7mJ7OfK8/edit?usp=sharing" target="_blank" rel="noopener">CROMA</a><a class="brand" style="--brand:#55c878" href="https://docs.google.com/document/d/1DN7Np0NdizZOHTfvf46588w3ldx84sso_0Y4Ohq4Zrk/edit?usp=sharing" target="_blank" rel="noopener">OPPO</a><a class="brand" style="--brand:#e68bb5" href="https://docs.google.com/document/d/15rfzJkRs8tz7w-SatryBf12JmKFcT9BRPHO7iwPujfU/edit?usp=sharing" target="_blank" rel="noopener">SECRET TEMPTATION</a>
+<a class="brand" style="--brand:#d5a978" href="https://docs.google.com/presentation/d/11eRqpfL4-VxV1aL2MTwc-1K_VoCkOM58Q39WbSgb26w/edit?usp=sharing" target="_blank" rel="noopener">MIA BY TANISHQ</a><a class="brand" style="--brand:#23c2a0" href="https://docs.google.com/presentation/d/1JzXYdG0qRMZHUu0iV0a63dwrr0KxFmX2PE7eL6tVCjM/edit?usp=sharing" target="_blank" rel="noopener">CAVINKARE</a><a class="brand" style="--brand:#f8a44d" href="https://docs.google.com/document/d/1eSd7Kc5okWKFZFNipGnsLsMHI74UUAkjVlxPEjRVQtk/edit?usp=sharing" target="_blank" rel="noopener">STYLE UNION</a><a class="brand" style="--brand:#45b7ed" href="https://docs.google.com/presentation/d/1X4BYSteA6s3o2UYV8gBK9SA_W3JQF2G6kiM7mJ7OfK8/edit?usp=sharing" target="_blank" rel="noopener">CROMA</a><a class="brand" style="--brand:#55c878" href="https://docs.google.com/document/d/1DN7Np0NdizZOHTfvf46588w3ldx84sso_0Y4Ohq4Zrk/edit?usp=sharing" target="_blank" rel="noopener">OPPO</a><a class="brand" style="--brand:#e68bb5" href="https://docs.google.com/document/d/15rfzJkRs8tz7w-SatryBf12JmKFcT9BRPHO7iwPujfU/edit?usp=sharing" target="_blank" rel="noopener">SECRET TEMPTATION</a>
+</div></div><div class="grid"><div class="card" id="pbr-mia"><div class="tag">JEWELLERY / BRAND IP</div><h3>MIA BY TANISHQ</h3><p>#TheMiaInYou: The Handover, Housewarming and The Missing Piece.</p><a class="deck" href="https://docs.google.com/presentation/d/11eRqpfL4-VxV1aL2MTwc-1K_VoCkOM58Q39WbSgb26w/edit?usp=sharing" target="_blank" rel="noopener">VIEW PRESENTATION ↗</a></div><div class="card"><div class="tag">BEAUTY / FESTIVE IP</div><h3>CAVINKARE</h3><p>Spinz: Tyohaar · Diwali Rush · Double Diwali · Diwali Extended · Sab Ready Hai.</p><a class="deck" href="https://docs.google.com/presentation/d/1JzXYdG0qRMZHUu0iV0a63dwrr0KxFmX2PE7eL6tVCjM/edit?usp=sharing" target="_blank" rel="noopener">VIEW PRESENTATION ↗</a></div><div class="card"><div class="tag">FASHION</div><h3>STYLE UNION</h3><p>Fashion-led digital storytelling.</p><a class="deck" href="https://docs.google.com/document/d/1eSd7Kc5okWKFZFNipGnsLsMHI74UUAkjVlxPEjRVQtk/edit?usp=sharing" target="_blank" rel="noopener">VIEW DOCUMENT ↗</a></div><div class="card"><div class="tag">ELECTRONICS</div><h3>CROMA</h3><p>Branded entertainment concepts and creative development.</p><a class="deck" href="https://docs.google.com/presentation/d/1X4BYSteA6s3o2UYV8gBK9SA_W3JQF2G6kiM7mJ7OfK8/edit?usp=sharing" target="_blank" rel="noopener">VIEW PRESENTATION ↗</a></div></div>
+<button class="btn" style="margin-top:22px" onclick="var e=document.getElementById('pbr-extra');e.classList.toggle('open');this.textContent=e.classList.contains('open')?'HIDE PROJECTS −':'VIEW REMAINING PROJECTS +'">VIEW REMAINING PROJECTS +</button><div class="grid extras" id="pbr-extra"><div class="card"><div class="tag">PROPOSED IP</div><h3>OPPO</h3><p>Lapata Dulha · Room 240 · 11:11.</p><a class="deck" href="https://docs.google.com/document/d/1DN7Np0NdizZOHTfvf46588w3ldx84sso_0Y4Ohq4Zrk/edit?usp=sharing" target="_blank" rel="noopener">VIEW DOCUMENT ↗</a></div><div class="card"><div class="tag">PROPOSED IP</div><h3>SECRET TEMPTATION</h3><p>The Secret Life of Sia and a dating mock-vlog concept.</p><a class="deck" href="https://docs.google.com/document/d/15rfzJkRs8tz7w-SatryBf12JmKFcT9BRPHO7iwPujfU/edit?usp=sharing" target="_blank" rel="noopener">VIEW DOCUMENT ↗</a></div><div class="card"><div class="tag">REGIONAL MICRO DRAMA</div><h3>FLIPKART</h3><p>Tamil Nadu seller-focused micro drama concept, developed for 6–10 episodes.</p></div></div></section>
+
+<section id="pbr-next"><div class="eyebrow">THE ROAD AHEAD</div><h2>WHAT'S NEXT.</h2><p class="desc">Turning ideas into opportunities, building meaningful partnerships and creating entertainment audiences choose to watch.</p><div class="nextgrid"><div class="card"><div class="tag">PARTNERSHIPS</div><h3>NEW CONVERSATIONS.</h3><p>Connecting with platforms and brands to explore scalable, audience-first storytelling.</p></div><div class="card"><div class="tag">DEVELOPMENT</div><h3>STRONGER STORIES.</h3><p>Developing distinctive formats, compelling concepts and original creative IP.</p></div><div class="card"><div class="tag">EXECUTION</div><h3>IDEAS INTO IMPACT.</h3><p>Taking promising opportunities from concept through production and release.</p></div></div><div class="end">THE NEXT STORY <em>STARTS HERE.</em></div></section><footer><a class="logo" href="#pb-refined" aria-label="PULKIT × BARCODE, back to home">PULKIT <span>×</span> BARCODE</a></footer></div><script>
+document.querySelectorAll('#pb-refined .film-art video').forEach(function(video){
+  video.addEventListener('click',function(){if(video.paused){var result=video.play();if(result && result.catch)result.catch(function(){});}else video.pause();});
+});
+</script><dialog id="tadka-viewer" aria-labelledby="tadka-viewer-title"><div class="viewer-header"><strong id="tadka-viewer-title">JioHotstar Tadka Presentation</strong><button type="button" id="tadka-viewer-close" aria-label="Close presentation">Close ×</button></div><iframe id="tadka-frame" title="JioHotstar Tadka presentation" allowfullscreen></iframe></dialog><script>
+(function(){var viewer=document.getElementById('tadka-viewer'), frame=document.getElementById('tadka-frame'), close=document.getElementById('tadka-viewer-close'), title=document.getElementById('tadka-viewer-title'), lastLink=null;if(!viewer.showModal)return;
+ document.querySelectorAll('#pb-refined a[href^="https://docs.google.com/presentation/d/"],#pb-refined a[href^="https://docs.google.com/document/d/"]').forEach(function(link){link.addEventListener('click',function(event){var match=link.href.match(/^https:\/\/docs\.google\.com\/(presentation|document)\/d\/([^/?#]+)/);if(!match)return;event.preventDefault();lastLink=link;var card=link.closest('.card'), heading=card&&card.querySelector('h3');var name=heading?heading.textContent.trim():link.textContent.trim();var label=name+' '+(match[1]==='presentation'?'Presentation':'Document');title.textContent=label;frame.title=label;frame.src='https://docs.google.com/'+match[1]+'/d/'+match[2]+'/preview';viewer.showModal();});});
+ close.addEventListener('click',function(){viewer.close();});viewer.addEventListener('close',function(){frame.removeAttribute('src');if(lastLink)lastLink.focus();});})();
+</script></body></html>
